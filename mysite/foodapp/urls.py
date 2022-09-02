@@ -5,9 +5,13 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('hello/', views.index, name='index'),
-    path('item/', views.item, name='item')
+    #/food/
+    path('', views.index, name='index'),
+    path('item/', views.item, name='item'),
+
+    #/food/1
+    path('<int:item_id>/', views.detail, name='detail')
     
-    #path('admin/', admin.site.urls),
+    
 
 ]
