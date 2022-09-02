@@ -3,7 +3,7 @@ from django.urls import path
 
 
 
-
+app_name = 'foodapp'
 urlpatterns = [
     #/food/
     path('', views.index, name='index'),
